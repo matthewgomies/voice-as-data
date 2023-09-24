@@ -2,6 +2,7 @@
 Voice features extraction
 
 1. Video and Audio Extraction
+   
 The initial phase of our voice analysis started with the collection of various video and audio files
 for processing. We collected the Golden Balls recordings from YouTube and obtained Real-life Trial
 Data video clips from the University of Michigan’s Language and Information Technologies website.
@@ -13,6 +14,7 @@ recordings by converting them into audio clips (WAV format) with a frequency of 
 rate of 128 kbps, and in mono channel format.
 
 2. Cleaning Audio Clips
+   
 After compiling the audio clips, our next step involved cleaning them by utilizing Audacity®.
 To achieve this, we first removed any voices that did not originate from the primary speaker. This
 included manually editing the audio recordings to trim sections where voices other than the main
@@ -23,9 +25,9 @@ reduction method to the entire Golden Balls audio clips. We configured the noise
 as follows: DB: 25, Sensitivity: 6, and Frequency Smoothing: 3. And lastly, we also normalized
 the volume of the audio clips by using the same application with the setting of perceived loudness
 -23 LUFS (treating mono as dual mono and treating stereo independently).
-8
 
 3. Main Voice Features
+   
 After cleaning the audio clips, we proceeded to extract the main acoustic features for our
 analysis. To obtain these, we employed a Python library called Parselmouth, which emulates
 PRAAT (program for the analysis and reconstruction of acoustic speech signals). Our extraction
@@ -36,6 +38,7 @@ fundamental frequencies as a measure of pitch variation. For a detailed explanat
 used to obtain these features, please refer to Appendix A1.
 
 4. Additional Features
+   
 Additional features that could be extracted from the audio clips include the voice emotion and
 the scripted speech (only for Golden Balls audio clips). We used Voice Emotion AI, Empath, to
 automatically detect four emotions: joy, calmness, anger, and sorrow from real-time speech in any
