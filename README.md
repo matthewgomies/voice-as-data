@@ -1,4 +1,4 @@
-# voice-as-data
+# Voice as Data
 Extraction of Acoustic Features for the Research Paper Titled "The Sound of Cooperation and Deception in High-Stakes Interactions"
 
 1. Video and Audio Extraction
