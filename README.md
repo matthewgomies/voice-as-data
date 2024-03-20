@@ -1,7 +1,7 @@
 # Voice as Data
 Extraction of Acoustic Features for the Research Paper Titled "The Sound of Cooperation and Deception in High-Stakes Interactions"
 
-1. Video and Audio Extraction
+### 1. Video and Audio Extraction
    
 The initial phase of our voice analysis started with the collection of various video and audio files
 for processing. We collected the Golden Balls recordings from YouTube and obtained Real-life Trial
@@ -13,7 +13,7 @@ the multi-platform audio editor Audacity® to extract the audio clips. We proces
 recordings by converting them into audio clips (WAV format) with a frequency of 16,000 Hz, a bit
 rate of 128 kbps, and in mono channel format.
 
-2. Cleaning Audio Clips
+### 2. Cleaning Audio Clips
    
 After compiling the audio clips, our next step involved cleaning them by utilizing Audacity®.
 To achieve this, we first removed any voices that did not originate from the primary speaker. This
@@ -26,7 +26,7 @@ as follows: DB: 25, Sensitivity: 6, and Frequency Smoothing: 3. And lastly, we a
 the volume of the audio clips by using the same application with the setting of perceived loudness
 -23 LUFS (treating mono as dual mono and treating stereo independently).
 
-3. Main Voice Features
+### 3. Main Voice Features
    
 After cleaning the audio clips, we proceeded to extract the main acoustic features for our
 analysis. To obtain these, we employed a Python library called Parselmouth, which emulates
@@ -37,7 +37,7 @@ Moreover, to provide an approximate quantification of intonation, we used the st
 fundamental frequencies as a measure of pitch variation. For a detailed explanation of the settings
 used to obtain these features, please refer to Appendix A1.
 
-4. Additional Features
+### 4. Additional Features
    
 Additional features that could be extracted from the audio clips include the voice emotion and
 the scripted speech (only for Golden Balls audio clips). We used Voice Emotion AI, Empath, to
